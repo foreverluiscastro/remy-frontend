@@ -31,3 +31,92 @@ body {
     text-wrap: balance;
   }
 }
+
+.Layout {
+  @apply
+  /* makes sure the app fits the full height of the screen */
+  bg-sky-300 min-h-screen flex flex-col
+}
+
+.Main {
+  @apply flex-grow container max-w-screen-lg mx-auto px-4 items-center justify-center text-center
+}
+
+.NavBar {
+  @apply
+  /* This makes sure the navbar occupies the full width of the app */
+  w-full
+  /* adds a nice visible divider between the main and nav elements */
+  shadow-md
+}
+
+.NavContainer {
+  @apply max-w-screen-lg mx-auto px-4 flex justify-between items-center h-16
+}
+
+.IngredientForm {
+  @apply w-full p-4 text-center bg-gray-700 bg-opacity-80 rounded-lg
+}
+
+.SideMargin {
+  @apply sm:mx-10
+}
+
+.Page {
+  @apply mb-4 mt-4
+}
+
+.TopMargin {
+  @apply mt-8
+}
+
+.List {
+  @apply grid sm:grid-cols-4 md:grid-cols-5 grid-cols-2 gap-4 p-4
+}
+
+.ItemBubble {
+  @apply bg-blue-500 rounded-3xl px-2 text-center items-center justify-center flex
+}
+
+.Form {
+  @apply flex flex-col w-full
+}
+
+.Input {
+  @apply rounded mb-4 shadow-md p-2 text-black border border-gray-300 focus:outline-none focus:border-blue-500
+}
+
+/* .FormField {
+  @apply flex items-center sm:flex-row flex-col flex-grow
+} */
+
+.Button {
+  @apply bg-sky-500 hover:bg-sky-600 ml-4 px-3 py-0.5 rounded-md text-lg transition duration-300 cursor-pointer font-semibold whitespace-nowrap
+}
+
+.Label {
+  @apply mb-2
+}
+
+/* .Input {
+  @apply shadow border rounded py-2 px-3 text-gray-700 leading-tight my-4
+} */
+
+.GenerateButton {
+  @apply bg-gray-100 text-blue-800 hover:bg-gray-300 hover:translate-y-1 rounded my-4 px-3 min-w-40 min-h-14 text-3xl font-semibold cursor-pointer shadow-lg duration-200
+}
+
+.LandingPage {
+  @apply bg-blue-300 flex
+}
+
+.RecipeList {
+  @apply rounded-xl bg-sky-700 text-left
+}
+
+
+/* attempt 2 in recipe form */
+
+.Bubble {
+  @apply rounded-md shadow-md bg-sky-500 bg-opacity-80 p-2 text-center hover:bg-opacity-100 cursor-pointer hover:scale-105 duration-300
+}
