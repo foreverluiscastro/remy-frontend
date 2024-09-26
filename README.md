@@ -1,40 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Remy: Anyone Can Be A Chef!
 
-## Getting Started
+![screenshot](./public/remy-big.png)
 
-First, run the development server:
+Stop wasting food and money! Enter the ingredients you have into **Remy**, and let the app craft delicious recipes based on what’s available. Your personal AI-powered chef is ready to help, without the need for a little mouse under a hat (though that would be cool).
+
+## Overview
+Remy is an AI-powered recipe generator that helps you turn what you already have into culinary magic. Built with Next.js and styled with Tailwind CSS, the app leverages OpenAI's GPT-3.5 Turbo model to generate personalized recipes. All interactions with the GPT model are handled server-side, following OpenAI's best practices for security and performance.
+
+<!-- You can check out a working version of my app [here](https://google.com) -->
+
+## Running the client locally
+If you would like to run this app locally, feel free to clone the repo and then navigate into the root directory of this project. Then, run the development server:
 
 ```bash
+npm install
+# then run
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+## User Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### User Profile
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+![screenshot](./public/remy-login.PNG)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+To personalize your cooking experience, Remy requires a user profile. Simply sign up with a username and password—quick and easy!
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Recipe Form
+![screenshot](./public/remy-form.png)
+The heart of Remy is the Recipe Form. Enter the ingredients you have on hand, and let the magic happen! For example, I was going for an Asian-inspired chicken stir-fry in this instance. Once your ingredients are in, hit the **Generate** button to see what Remy cooks up!
 
-## Learn More
+### The Recipe
+![screenshot](./public/remy-recipe.png)
+Remy sends your input to OpenAI for lightning-fast analysis, and voilà—your recipe is ready! This one was spot-on for my stir-fry craving. Now my partner and I can enjoy a delicious dinner without extra trips to the grocery store.
 
-To learn more about Next.js, take a look at the following resources:
+### Remy Community
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![screenshot](./public/saved-recipes.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The Remy Community is a space where users can submit and browse each other’s creations. Feeling uninspired? This is the perfect place to find new flavor ideas for your next meal!
 
-## Deploy on Vercel
+## Technical Features
+**User security**: the user must be logged in in order to access the app.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Ease of use**: uses context to make passing info easier and making prop drilling a thing of the past.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Responsive UI**: levergaes tailiwnd CSS to create a sleek and impressive User Interface.
+
+**Client-sdie routing**: uses react-router-dom's rotuing to create a seamless and interactive experience.
+
+<!-- ## Running the client  -->
+
+created by Luis Castro.
