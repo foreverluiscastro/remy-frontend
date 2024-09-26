@@ -31,7 +31,7 @@ To personalize your cooking experience, Remy requires a user profile. Simply sig
 The heart of Remy is the Recipe Form. Enter the ingredients you have on hand, and let the magic happen! For example, I was going for an Asian-inspired chicken stir-fry in this instance. Once your ingredients are in, hit the **Generate** button to see what Remy cooks up!
 
 ### The Recipe
-![screenshot](./public/remy-recipe.png)
+![screenshot](./public/generated_recipe.png)
 Remy sends your input to OpenAI for lightning-fast analysis, and voilà—your recipe is ready! This one was spot-on for my stir-fry craving. Now my partner and I can enjoy a delicious dinner without extra trips to the grocery store.
 
 ### Remy Community
