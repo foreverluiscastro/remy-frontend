@@ -34,6 +34,12 @@ The heart of Remy is the Recipe Form. Enter the ingredients you have on hand, an
 ![screenshot](./public/generated_recipe.png)
 Remy sends your input to OpenAI for lightning-fast analysis, and voilà—your recipe is ready! This one was spot-on for my stir-fry craving. Now my partner and I can enjoy a delicious dinner without extra trips to the grocery store.
 
+### Mssing ingredients?
+
+![screenshot](./public/regenerate.png)
+
+The Ai may suggest ingredients that you did not specifically enter and may not have on hand. In that case let the Ai know what ingredients you don't have and then hit **Regenerate** so that it can regenerate a recipe for you.
+
 ### Remy Community
 
 ![screenshot](./public/saved-recipes.png)

@@ -7,6 +7,8 @@ export default function RecipeForm() {
   const {setRecipe} = useAppContext();
   const router = useRouter();
 
+  // If you would like to use pre created data to ingredients and styles use spread operator to add ING and STY to state.
+  // Like this ... useState([...ING])
   const [ingredients, setIngredients] = useState([]);
   const [styles, setStyles] = useState([]);
 
