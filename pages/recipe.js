@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useAppContext } from "@/components/providers/AppProvider";
 import { useRouter } from "next/router";
 
-function recipe() {
+function Recipe() {
   const { recipe, setRecipe, user } = useAppContext();
 
   const router = useRouter()
@@ -232,4 +232,4 @@ function recipe() {
   );
 }
 
-export default recipe;
+export default Recipe;
