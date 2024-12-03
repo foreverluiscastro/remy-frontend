@@ -3,7 +3,7 @@ import { useAppContext } from "@/components/providers/AppProvider";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
-function profile() {
+function Profile() {
   const { user, setUser, setRecipe, showFeed, setShowFeed } = useAppContext();
   const router = useRouter();
 
@@ -166,4 +166,4 @@ function profile() {
   );
 }
 
-export default profile;
+export default Profile;
