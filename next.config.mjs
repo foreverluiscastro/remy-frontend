@@ -5,39 +5,39 @@ const nextConfig = {
     return [
       {
         source: '/signup',
-        destination: 'http://127.0.0.1:5555/signup',
+        destination: 'https://remy-api.fly.dev/signup',
       },
       {
         source: '/login',
-        destination: 'http://127.0.0.1:5555/login',
+        destination: 'https://remy-api.fly.dev/login',
       },
       {
         source: '/me',
-        destination: 'http://127.0.0.1:5555/me'
+        destination: 'https://remy-api.fly.dev/me'
       },
       {
         source: '/logout',
-        destination: 'http://127.0.0.1:5555/logout'
+        destination: 'https://remy-api.fly.dev/logout'
       },
       {
         source: '/recipes',
-        destination: 'http://127.0.0.1:5555/recipes'
+        destination: 'https://remy-api.fly.dev/recipes'
       },
       {
         source: '/recipes/:id',
-        destination: 'http://127.0.0.1:5555/recipes/:id'
+        destination: 'https://remy-api.fly.dev/recipes/:id'
       },
       {
         source: '/saved_recipes',
-        destination: 'http://127.0.0.1:5555/saved_recipes'
+        destination: 'https://remy-api.fly.dev/saved_recipes'
       },
       {
         source: '/saved_recipes/:id',
-        destination: 'http://127.0.0.1:5555/saved_recipes/:id'
+        destination: 'https://remy-api.fly.dev/saved_recipes/:id'
       },
       {
         source: '/generate_recipe',
-        destination: 'http://127.0.0.1:5555/generate_recipe',
+        destination: 'https://remy-api.fly.dev/generate_recipe',
       }
     ];
   },
