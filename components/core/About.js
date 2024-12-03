@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 function About() {
@@ -5,7 +6,7 @@ function About() {
     <div className="flex flex-col max-w-screen-xl mx-auto px-4">
     <div className="flex md:flex-row flex-col py-4">
       <div className="flex flex-col text-center items-center">
-        <img
+        <Image
           src="/remy-form.png"
           width={1000}
           height={1000}
@@ -18,7 +19,7 @@ function About() {
         </p>
       </div>
       <div className="flex flex-col text-center items-center">
-        <img
+        <Image
           src="/remy-recipe.png"
           width={1000}
           height={1000}

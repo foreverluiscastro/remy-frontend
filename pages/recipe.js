@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useAppContext } from "@/components/providers/AppProvider";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 function Recipe() {
   const { recipe, setRecipe, user } = useAppContext();
@@ -118,7 +119,7 @@ function Recipe() {
   return (
     <div className="RecipeList">
       <div className={`${ recipe.image_url ? "relative" : "pt-4"}`}>
-        { recipe.image_url &&         <img src={recipe.image_url} className="w-full h-52 object-cover rounded-t-xl" />}
+        { recipe.image_url &&         <Image src={recipe.image_url} className="w-full h-52 object-cover rounded-t-xl" alt="imgUrl"/>}
         <div className={`${ recipe.image_url ? "absolute bottom-0" : ""} w-full items-center px-4`}>
           <div className="justify-between w-full flex mb-4">
 
@@ -126,7 +127,7 @@ function Recipe() {
           <button className={`ml-4 px-3 py-0.5 rounded-md text-lg transition duration-300 cursor-pointer font-semibold whitespace-nowrap flex items-center ${ recipe.is_saved ? " bg-yellow-500 hover:bg-yellow-600": "bg-sky-500 hover:bg-sky-600"}`}
           onClick={handleClick}
           >
-            <img src="/save.png" className="sm:p-1" width={25} height={25}/>
+            <Image src="/save.png" className="sm:p-1" width={25} height={25} alt="save"/>
             <span className="hidden sm:inline">
             
             { recipe.user && recipe.user.id === user.id ? "Published": `${ recipe.is_saved ? "Saved" : "Save" }` }
@@ -195,7 +196,7 @@ function Recipe() {
               setMissingInput("");
             }}
           >
-            <img
+            <Image
               src="/arrow.png"
               width={100}
               height={100}

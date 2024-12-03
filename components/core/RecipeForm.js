@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ING, STY, RES  } from "../data";
 import { useAppContext } from "../providers/AppProvider";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 export default function RecipeForm() {
   const {setRecipe} = useAppContext();
@@ -73,7 +74,7 @@ export default function RecipeForm() {
                 handleAddItem(ingredientInput, setIngredients, setStyleInput)
               }
             >
-              <img
+              <Image
                 src="/arrow.png"
                 width={100}
                 height={100}
@@ -112,7 +113,7 @@ export default function RecipeForm() {
                 handleAddItem(styleInput, setStyles, setStyleInput)
               }
             >
-              <img
+              <Image
                 src="/arrow.png"
                 width={100}
                 height={100}

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useAppContext } from "../providers/AppProvider";
 import NavBar from "./NavBar";
 import LandingPage from "./LandingPage";
+import Image from "next/image";
 
 export const Layout = ({ children }) => {
   const { user, setUser } = useAppContext();
@@ -29,7 +30,7 @@ export const Layout = ({ children }) => {
       </div>
       <footer className="px-4 pb-4">
         <h1 className="mx-auto  items-center justify-center text-center flex text-lg">Crafted by Luis Castro. Powered by OpenAI
-          <img src="/openai.png" width={30} height={30} className="p-1"/>
+          <Image src="/openai.png" width={30} height={30} className="p-1" alt="open-ai"/>
         </h1>
       </footer>
     </div>
