@@ -1,5 +1,6 @@
 import { Page } from "@/components/core/Page";
 import { useAppContext } from "@/components/providers/AppProvider";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
@@ -77,7 +78,7 @@ function Profile() {
           <div className="flex justify-between mb-4 w-full">
             <h1 className="font-bold text-2xl">@{user.username}</h1>
             <button className="Button flex items-center" onClick={handleLogOut}>
-              <img src="/logout.png" width={25} height={25} className="p-1" />
+              <Image src="/logout.png" width={25} height={25} className="p-1" alt="logout"/>
               <span className="hidden sm:inline">Logout</span>
             </button>
           </div>
@@ -149,9 +150,10 @@ function Profile() {
                   }}
                 >
                   {recipe.image_url && (
-                    <img
+                    <Image
                       src={recipe.image_url}
                       className="object-cover h-48 w-full rounded"
+                      alt="recipeImg"
                     />
                   )}
                   <h1>{recipe.title}</h1>

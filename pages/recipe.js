@@ -12,7 +12,7 @@ function Recipe() {
     if (storedRecipe) {
       setRecipe(JSON.parse(storedRecipe));
     }
-  }, []);
+  });
 
   useEffect(() => {
     if (recipe !== null) {
