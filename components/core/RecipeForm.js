@@ -51,6 +51,7 @@ export default function RecipeForm() {
         <h1 className="font-semibold text-2xl mb-4">Generate a recipe!</h1>
         <p className="text-xl mb-4 bg-sky-700 bg-opacity-80 rounded-lg p-4">Add any ingredients you have available as well as the style you're looking for and Remy will generate a great recipe!</p>
         <div className="flex flex-col w-full">
+        
           <label className="mb-2 font-semibold text-xl">Ingredients</label>
           <div className="mb-4 flex">
             <input
