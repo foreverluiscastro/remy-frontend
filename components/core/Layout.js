@@ -16,7 +16,7 @@ export const Layout = ({ children }) => {
         r.json().then((user) => setUser(user));
       }
     });
-  }, []);
+  }, [setUser]);
 
   if (!user) return <LandingPage />;
 
